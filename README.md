@@ -4,7 +4,7 @@
 
 ## Interfaces
 
-`java.lang.Iterable` and `java.lang.Iterator` are related interfaces, commonly-seen in Java land. An *iterable* is simply an object which can be iterated over. An *iterator* is the object responsible for this iteration.
+`java.lang.Iterable` and `java.lang.Iterator` are related interfaces commonly seen in Java land. An *iterable* is simply an object which can be iterated over. An *iterator* is the object responsible for this iteration.
 
 ### Iterator
 
