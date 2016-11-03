@@ -14,12 +14,13 @@ There are only a few methods that need to be implemented: `next()`, `hasNext()`,
 
 ### Iterable
 
-This interface only requires one method to be implemented, `iterator()`, which returns an `Iterator` instance. (This interface only comes into play in the extension.)
+This interface only requires one method to be implemented, `iterator()`, which returns an `Iterator` instance.
+
+### Extension
+
+Create your own class that implements `Iterable` and creates a new instance of `OhMyIterator` whenever `iterator()` is called.
 
 ### Notes
 
 - Remember the diamond operator.
-
-### Extensions
-
-Create your own class that implements `Iterable` and creates a new instance of `OhMyIterator` whenever `iterator()` is called.
+- Iterators and iterables are common topics for interview questions. Know the difference. Same goes for other Java Collections Framework classes like `java.util.Collection`, `java.util.List`, and `java.util.Map`.
