@@ -59,6 +59,16 @@ public class OhMyIteratorTest {
 	}
 	
 	@Test
+	public void shouldThrowExceptionIfNextIsNotAvailableTheOldWay() {
+		Iterator<String> underTest = new OhMyIterator(EMPTY_ARRAY);
+		try {
+			underTest.next();
+			Assert.fail("Should have thrown an exception");
+		} catch (NoSuchElementException expected) {
+		}
+	}
+	
+	@Test
 	public void shouldReadAllElements() {
 		Iterator<String> underTest = new OhMyIterator(ANIMALS);
 		
